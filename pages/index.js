@@ -96,7 +96,7 @@ const Home = ({
   function HeaderSEO() {
     return (
       <Head>
-        <title>{`${process.env.NEXT_PUBLIC_APP_NAME}` | "Bro lets code"}</title>
+        <title>{`${process.env.NEXT_PUBLIC_APP_NAME} | Bro lets code`}</title>
         <meta
           name="description"
           content="Broocode is a space for the coders which provide you with coding problems with their solutions ranging from beginner to professional."
