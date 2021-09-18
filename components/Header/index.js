@@ -46,7 +46,7 @@ const Header = () => {
         <Grid item>
           <a href="/">
             <img src="/vedifly.svg" className={styles.logo} alt="Vedifly" />
-            <span className={styles.appname}>Vedifly</span>
+            <span className={styles.appname}>Broocode</span>
           </a>
         </Grid>
         <Grid item></Grid>
