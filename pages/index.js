@@ -96,19 +96,19 @@ const Home = ({
   function HeaderSEO() {
     return (
       <Head>
-        <title>{process.env.NEXT_PUBLIC_APP_NAME}</title>
+        <title>{`${process.env.NEXT_PUBLIC_APP_NAME}` | "Bro lets code"}</title>
         <meta
           name="description"
-          content="This site is a knowledge website based on our ancient medicinal knowledge to cure various diseases. All the medicinal herbs and their uses in different diseases. Herbs can be searched by diseases name and vice versa."
+          content="Broocode is a space for the coders which provide you with coding problems with their solutions ranging from beginner to professional."
         />
         <link rel="canonical" href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}`} />
         <meta
           property="og:title"
-          content={`This site is a knowledge website based on our ancient medicinal knowledge to cure various diseases. All the medicinal herbs and their uses in different diseases. Herbs can be searched by diseases name and vice versa. | ${process.env.NEXT_PUBLIC_APP_NAME}`}
+          content={`Broocode is a space for the coders which provide you with coding problems with their solutions ranging from beginner to professional. | ${process.env.NEXT_PUBLIC_APP_NAME}`}
         />
         <meta
           property="og:description"
-          content="This site is a knowledge website based on our ancient medicinal knowledge to cure various diseases. All the medicinal herbs and their uses in different diseases. Herbs can be searched by diseases name and vice versa."
+          content="Broocode is a space for the coders which provide you with coding problems with their solutions ranging from beginner to professional."
         />
         <meta property="og:type" content="website" />
         <meta
