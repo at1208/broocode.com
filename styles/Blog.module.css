@@ -1,7 +1,7 @@
 .title {
   font-size: 48px;
   line-height: 60px;
-  margin-top: 0.56em;
+  margin-top: 0px;
   margin-bottom: -0.27em;
   letter-spacing: -0.011em;
   font-weight: 400;
@@ -24,7 +24,7 @@
 @media (max-width: 600px) {
   .title {
     font-size: 34px;
-    margin-top: 0.56em;
+    margin-top: 0px;
     margin-bottom: -0.27em;
     line-height: 42px;
     letter-spacing: -0.016em;

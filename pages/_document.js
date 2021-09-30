@@ -7,10 +7,10 @@ class MyDocument extends Document {
     if (process.env.NEXT_PUBLIC_PRODUCTION_API) {
       return {
         __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-204324898-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-204373881-2');
    `,
       };
     }
@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
-          <meta name="apple-mobile-web-app-title" content="Vedifly" />
+          <meta name="apple-mobile-web-app-title" content="Broocode" />
           <meta
             name="p:domain_verify"
             content="b2666a47ce2019ef96afa5b4b91da6a2"
@@ -51,10 +51,10 @@ class MyDocument extends Document {
             href="https://www.googletagmanager.com"
             crossOrigin
           />
-          <link rel="icon" href="/vedifly.svg" />
+          <link rel="icon" href="/Bro-trans-bg.svg" />
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-204324898-1"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-204373881-2"
           ></script>
 
           <script

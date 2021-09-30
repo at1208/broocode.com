@@ -45,8 +45,11 @@ const Header = () => {
       <Grid container justify="space-between">
         <Grid item>
           <a href="/">
-            <img src="/vedifly.svg" className={styles.logo} alt="Vedifly" />
-            <span className={styles.appname}>Broocode</span>
+            <img
+              src="/Bro-large-trans-bg.svg"
+              className={styles.logo}
+              alt="Broocode"
+            />
           </a>
         </Grid>
         <Grid item></Grid>
