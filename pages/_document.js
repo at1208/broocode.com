@@ -10,7 +10,7 @@ class MyDocument extends Document {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-204373881-2');
+        gtag('config', 'UA-208902431-1');
    `,
       };
     }
@@ -54,7 +54,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/Bro-trans-bg.svg" />
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-204373881-2"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-208902431-1"
           ></script>
 
           <script
