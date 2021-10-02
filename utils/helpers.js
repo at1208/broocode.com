@@ -1,7 +1,7 @@
-import BlogSmallCard from "../components/Blog/Cards/SmallCard";
-import BlogMediumCard from "../components/Blog/Cards/MediumCard";
-import AuthorCard from "../components/Blog/Cards/AuthorCard";
-import TrendingCard from "../components/Blog/Cards/TrendingCard";
+import BlogSmallCard from "../components/Blog/Cards/Small";
+import BlogMediumCard from "../components/Blog/Cards/Medium";
+import AuthorCard from "../components/Blog/Cards/Author";
+import TrendingCard from "../components/Blog/Cards/Trending";
 
 export function capitalize(input) {
   var words = input.split(" ");

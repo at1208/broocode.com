@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import styles from "../../styles/Blog.module.css";
 import { Grid } from "@material-ui/core";
 
-const BlogSmallCard = dynamic(() => import("./Cards/SmallCard"), {
+const BlogSmallCard = dynamic(() => import("./Cards/Small"), {
   ssr: false,
 });
 

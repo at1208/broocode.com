@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Box, Typography, Grid } from "@material-ui/core";
 import styles from "../styles/Home.module.css";
 import Skeleton from "react-loading-skeleton";
-import BlogLargeCard from "../components/Blog/Cards/LargeCard";
+import BlogLargeCard from "../components/Blog/Cards/Large";
 import SmallCardSkeleton from "../components/Blog/Cards/Skeletons/SmallCardSkeleton";
 import AuthorCardSkeleton from "../components/Blog/Cards/Skeletons/AuthorCardSkeleton";
 import InfiniteScroll from "react-infinite-scroll-component";
