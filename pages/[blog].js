@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 import styles from "../styles/Blog.module.css";
 import { read_blog } from "../actions/blog";
 
-const RelatedBlogs = dynamic(() => import("../components/Blog/RelatedBlogs"), {
+const RelatedBlogs = dynamic(() => import("../components/Blog/RelatedBlog"), {
   ssr: false,
 });
 
