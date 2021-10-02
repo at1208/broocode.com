@@ -7,7 +7,7 @@ import BlogLargeCard from "../components/Blog/Cards/LargeCard";
 import SmallCardSkeleton from "../components/Blog/Cards/Skeletons/SmallCardSkeleton";
 import AuthorCardSkeleton from "../components/Blog/Cards/Skeletons/AuthorCardSkeleton";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Sidebar from "../components/Core/Sidebar";
+// import Sidebar from "../components/Core/Sidebar";
 import Header from "../components/Home/Header";
 import Layout from "../components/Layout";
 import {

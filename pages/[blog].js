@@ -2,7 +2,7 @@ import { withRouter } from "next/router";
 import dynamic from "next/dynamic";
 import { Grid, Box } from "@material-ui/core";
 import Router from "next/router";
-import BlogDetail from "../components/Blog/Blog";
+import BlogDetail from "../components/Blog";
 import BlogHead from "../components/Blog/BlogHeader";
 import Layout from "../components/Layout";
 import styles from "../styles/Blog.module.css";
