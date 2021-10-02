@@ -1,47 +1,53 @@
-import { useEffect, useState } from 'react';
-import { related_blogs } from '../../actions/blog';
-import dynamic from 'next/dynamic'
-import styles from '../../styles/Blog.module.css';
+import { useEffect, useState } from "react";
+import { related_blogs } from "../../actions/blog";
+import dynamic from "next/dynamic";
+import styles from "../../styles/Blog.module.css";
+import { Grid } from "@material-ui/core";
 
-const BlogSmallCard = dynamic(
-  () => import('./Cards/smallCard'),
-   { ssr: false }
-)
-
+const BlogSmallCard = dynamic(() => import("./Cards/SmallCard"), {
+  ssr: false,
+});
 
 const RelatedBlogs = ({ blog }) => {
   const [relatedBlogList, setRelatedBlogList] = useState();
 
-  useEffect(() =>{
+  useEffect(() => {
     related_blogs({ blog: blog })
       .then((value) => {
-         setRelatedBlogList(value)
+        setRelatedBlogList(value);
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }, [])
+        console.log(err);
+      });
+  }, []);
 
-
-  function RelatedBlogListComponent(){
-    if(relatedBlogList){
-      return relatedBlogList.map((eachblog, i) => {
-        return  <div className="col-md-4 col-sm-6" key={i}>
-                  <div className={styles.eachblog}>
-                     <BlogSmallCard key={i} blog={eachblog} />
-                  </div>
-                </div>
-      })
-    }else{
-      return <>
-             </>
+  function RelatedBlogListComponent() {
+    if (relatedBlogList) {
+      return (
+        <Grid container justify="center">
+          {relatedBlogList.map((eachblog, i) => {
+            return (
+              <Grid
+                xs={12}
+                sm={6}
+                md={5}
+                lg={3}
+                xl={3}
+                key={i}
+                className={styles.eachblog}
+              >
+                <BlogSmallCard blog={eachblog} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      );
+    } else {
+      return <></>;
     }
   }
 
-
-  return <>
-        <RelatedBlogListComponent />
-         </>
-}
+  return <RelatedBlogListComponent />;
+};
 
 export default RelatedBlogs;
