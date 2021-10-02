@@ -2,7 +2,7 @@ import Head from "next/head";
 import { withRouter } from "next/router";
 import Layout from "../../components/Layout";
 import { Grid, Typography } from "@material-ui/core";
-import BlogMediumCard from "../../components/Blog/Cards/MediumCard";
+import BlogMediumCard from "../../components/Blog/Cards/Medium";
 import { blogs_list_by_category } from "../../actions/blog";
 import { capitalize } from "../../utils/helpers";
 import { category_by_slug } from "../../actions/category";
